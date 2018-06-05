@@ -95,21 +95,21 @@
 	<repositories>
 		<repository>
 			<id>maven.proxy</id>
-			<url>http://172.16.22.65:8081/repository/maven-central/</url>
+			<url>http://172.16.22.65:8081/repository/maven-public/</url>
 		</repository>
 	</repositories>
 
 	<pluginRepositories>
 		<pluginRepository>
 			<id>maven.pluginproxy</id>
-			<url>http://172.16.22.65:8081/repository/maven-central/</url>
+			<url>http://172.16.22.65:8081/repository/maven-public/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
 	<distributionManagement>
 		<repository>
 			<id>myMavenRepo.write</id>
-			<url>http://172.16.22.65:8081/repository/maven-central/</url>
+			<url>http://172.16.22.65:8081/repository/maven-public/</url>
 		</repository>
 	</distributionManagement>
 
