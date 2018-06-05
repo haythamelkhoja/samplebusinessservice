@@ -23,8 +23,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<myMavenRepo.write.url>http://172.16.22.65:8081/repository/maven-snapshots/</myMavenRepo.write.url>
-		<myMavenRepo.read.url>http://172.16.22.65:8081/repository/maven-snapshots/</myMavenRepo.read.url>
 	</properties>
 
 	<dependencies>
@@ -95,7 +93,6 @@
 	</build>
 
 	<repositories>
-		<!--
 		<repository>
 			<id>central</id>
 			<url>http://repo1.maven.org/maven2</url>
@@ -106,11 +103,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		-->
-		<repository>
-			<id>myMavenRepo.read</id>
-			<url>http://172.16.22.65:8081/repository/maven-snapshots/</url>
-		</repository>
 
 		<repository>
 			<id>maven.proxy</id>
@@ -119,7 +111,6 @@
 	</repositories>
 
 	<pluginRepositories>
-		<!--
 		<pluginRepository>
 			<id>central</id>
 			<url>http://repo1.maven.org/maven2</url>
@@ -130,7 +121,7 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-		-->
+
 		<pluginRepository>
 			<id>maven.proxy</id>
 			<url>http://172.16.22.65:8081/repository/maven-central/</url>
@@ -140,7 +131,7 @@
 	<distributionManagement>
 		<repository>
 			<id>myMavenRepo.write</id>
-			<url>http://172.16.22.65:8081/repository/maven-snapshots/</url>
+			<url>http://172.16.22.65:8081/repository/maven-central/</url>
 		</repository>
 	</distributionManagement>
 
