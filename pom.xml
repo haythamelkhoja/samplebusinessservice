@@ -95,6 +95,7 @@
 	</build>
 
 	<repositories>
+		<!--
 		<repository>
 			<id>central</id>
 			<url>http://repo1.maven.org/maven2</url>
@@ -105,13 +106,20 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		-->
 		<repository>
 			<id>myMavenRepo.read</id>
 			<url>http://172.16.22.65:8081/repository/maven-snapshots/</url>
 		</repository>
+
+		<repository>
+			<id>maven.proxy</id>
+			<url>http://172.16.22.65:8081/repository/maven-central/</url>
+		</repository>
 	</repositories>
 
 	<pluginRepositories>
+		<!--
 		<pluginRepository>
 			<id>central</id>
 			<url>http://repo1.maven.org/maven2</url>
@@ -121,6 +129,11 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</pluginRepository>
+		-->
+		<pluginRepository>
+			<id>maven.proxy</id>
+			<url>http://172.16.22.65:8081/repository/maven-central/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
