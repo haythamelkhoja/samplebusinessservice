@@ -94,17 +94,6 @@
 
 	<repositories>
 		<repository>
-			<id>central</id>
-			<url>http://repo1.maven.org/maven2</url>
-			<releases>
-					<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-
-		<repository>
 			<id>maven.proxy</id>
 			<url>http://172.16.22.65:8081/repository/maven-central/</url>
 		</repository>
@@ -112,18 +101,7 @@
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>central</id>
-			<url>http://repo1.maven.org/maven2</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-
-		<pluginRepository>
-			<id>maven.proxy</id>
+			<id>maven.pluginproxy</id>
 			<url>http://172.16.22.65:8081/repository/maven-central/</url>
 		</pluginRepository>
 	</pluginRepositories>
